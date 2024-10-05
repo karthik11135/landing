@@ -45,7 +45,7 @@ const Hero = () => {
           transition={transitionProperties}
           className="bg-gradient-to-br w-fit mx-auto font-bold from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-8xl tracking-tight text-transparent"
         >
-          World's Best <br /> AI Services 
+          World's Best <br /> <span className="text-cyan-500">AI</span> Services 
         </motion.h1>
       <ShootingStars />
       </div>
