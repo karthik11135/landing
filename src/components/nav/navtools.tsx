@@ -34,8 +34,8 @@ export const NavWrapper = ({ children }: { children: React.ReactNode }) => {
   const context = useContext(NavToggleContext);
 
   useMotionValueEvent(scrollYProgress, "change", (arg) => {
-    console.log(arg)
-    if (arg > 0.3) {
+    console.log(arg);
+    if (arg > 0.1) {
       context?.setChangeNav(true);
     } else {
       context?.setChangeNav(false);
@@ -45,7 +45,11 @@ export const NavWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
     <motion.div
       className={` text-white fixed grid z-10 grid-cols-3 left-1/2 transform -translate-x-1/2 py-2.5 px-6 rounded-full mx-auto
-      ${context?.changeNav ? "shadow shadow-slate-400  ring-slate-500 backdrop-blur-sm" : ""}`}
+      ${
+        context?.changeNav
+          ? "shadow shadow-slate-400  ring-slate-500 backdrop-blur-lg"
+          : ""
+      }`}
       initial={{
         width: "83.33%",
         marginTop: "0rem",
