@@ -26,7 +26,7 @@ export default function Home() {
         <CustomerSection />
       </div>
       <div className="border-t border-zinc-700">
-<Footer />
+        <Footer />
       </div>
     </>
   );

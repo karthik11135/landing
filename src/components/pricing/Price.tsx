@@ -5,8 +5,8 @@ import { AddIcon } from "../ui/Icons";
 const Price = () => {
   return (
     <div className="mb-20 w-5/6 mx-auto">
-      <div className="w-3/6 mb-10 mx-auto text-center">
-        <h1 className="text-4xl text-transparent font-bold bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 mb-4">
+      <div className="md:w-3/6 mb-10 mx-auto text-center">
+        <h1 className="md:text-4xl text-3xl text-transparent font-bold bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 mb-4">
           Intuitive Pricing available
         </h1>
         <p className="font-light text-zinc-500">
@@ -14,7 +14,7 @@ const Price = () => {
           best
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid md:grid-cols-3 gap-5">
         <PriceCard purchaseType="Personal" price={400} />
         <PriceCard purchaseType="Medium" price={800} />
         <PriceCard purchaseType="Company" price={1200} />
@@ -56,14 +56,14 @@ const PriceCard = ({
   };
 
   return (
-    <div className="col-span-1 border-t border-zinc-700 h-[44rem] py-2.5 bg-neutral-900 text-slate-50 rounded-2xl  ">
+    <div className="col-span-1 border-t border-zinc-700 h-fit md:h-[44rem] py-2.5 bg-neutral-900 text-slate-50 rounded-2xl  ">
       <div className="bg-zinc-700 border-t border-neutral-500 mx-3 mb-12 px-3 rounded-2xl">
         <div className="flex mb-10 pt-5">
           <h4 className="font-semibold text-lg ">{purchaseType}</h4>
         </div>
         <div className="mb-10">
           <span className="font-extrabold">$</span>
-          <span className="text-8xl font-extrabold text-cyan-500">{price}</span>
+          <span className="md:text-8xl text-6xl font-extrabold text-cyan-500">{price}</span>
           /month
         </div>
         <div className="">

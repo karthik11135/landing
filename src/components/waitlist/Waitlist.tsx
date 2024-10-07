@@ -5,7 +5,7 @@ import { BackgroundBeams } from "../ui/background-beams";
 
 const Waitlist = () => {
   return (
-    <div className="h-[40rem] relative flex border-t-2 border-zinc-800 rounded-t-3xl items-center justify-center text-slate-50 py-40">
+    <div className="md:h-[40rem] h-[30rem] relative flex border-t-2 border-zinc-800 rounded-t-3xl items-center justify-center text-slate-50 md:py-40">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -15,9 +15,9 @@ const Waitlist = () => {
           type: "spring",
           stiffness: 200,
         }}
-        className="w-2/6 z-10"
+        className="md:w-2/6 w-5/6 z-10"
       >
-        <h1 className="bg-clip-text bg-gradient-to-br text-center text-transparent font-extrabold from-cyan-400 to-neutral-700 text-7xl mb-4">
+        <h1 className="bg-clip-text bg-gradient-to-br text-center text-transparent font-extrabold from-cyan-400 to-neutral-700 text-5xl md:text-7xl mb-4">
           Join us today
         </h1>
         <p className="from-neutral-200 mb-7 to-neutral-600 bg-clip-text text-transparent bg-gradient-to-br text-center">

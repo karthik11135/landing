@@ -22,8 +22,8 @@ const MenuNavigations = () => {
         Startup
       </div>
       {isOpen && (
-        <AnimatePresence>
-          <div className="absolute md:static top-14 mt-2 md:mt-0 rounded  md:bg-none md:rounded-none md:border-none border text-slate-300 col-span-1 md:col-span-2 md:flex items-center shrink  text-center">
+        <div className="absolute md:static top-14 mt-2 md:mt-0 rounded  md:bg-none md:rounded-none md:border-none border text-slate-300 col-span-1 md:col-span-2 md:flex items-center shrink  text-center">
+          <AnimatePresence>
             <motion.div
               initial={{
                 scale: 0,
@@ -34,7 +34,7 @@ const MenuNavigations = () => {
                 height: "auto",
               }}
               exit={{
-                scale: 0,
+                // scale: 0,
                 height: 0,
               }}
               transition={{
@@ -57,8 +57,8 @@ const MenuNavigations = () => {
                 Contact
               </p>
             </motion.div>
-          </div>
-        </AnimatePresence>
+          </AnimatePresence>
+        </div>
       )}
     </>
   );

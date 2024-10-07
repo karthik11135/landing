@@ -54,7 +54,7 @@ const GridCardItem = ({ text }: { text: string }) => {
 export const FourthGridItem = () => {
   return (
     <CardContainer
-      containerClassName="col-span-2  h-full py-0"
+      containerClassName="md:col-span-2  h-full py-0"
       className=" h-full"
     >
       <CardBody className="w-full  h-full">
@@ -62,7 +62,7 @@ export const FourthGridItem = () => {
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3, delay: 0.2 }}
-          className="rounded-lg pe-2.5 gap-5 bg-cardColor h-full flex  pt-4"
+          className="rounded-lg pe-2.5 gap-5 bg-cardColor h-full md:flex  pt-4"
         >
           <CardItem translateZ={40}>
             <Image
@@ -74,7 +74,7 @@ export const FourthGridItem = () => {
             />
           </CardItem>
           <CardItem translateZ={60} translateX={-10}>
-            <div className="ms-auto tracking-tight w-fit font-bold -sm">
+            <div className="ms-auto md:mt-0 mt-3 tracking-tight w-fit font-bold -sm">
               <p>Greenary is developed by Artificial Intelligence</p>
               <p className="text-sm font-light text-zinc-200 mt-3">
                 Game theory, regresssion, lemmetization are the most important
@@ -97,7 +97,7 @@ export const FirstGridItem = () => (
     initial={{ opacity: 0, x: -20 }}
     whileInView={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.3, delay: 0.2 }}
-    className="col-span-2 ps-5 gap-2 bg-cardColor grid grid-cols-3 rounded-lg pt-4"
+    className="md:col-span-2 col-span-1 ps-5 pt-4 w-full gap-2 bg-cardColor grid md:grid-cols-3 rounded-lg md:pt-4"
   >
     <div className="col-span-1">
       <h3 className="text-lg tracking-tight font-bold mb-4">
@@ -112,7 +112,7 @@ export const FirstGridItem = () => (
         <AnimatedTooltipModified items={socialProfiles} />
       </div>
     </div>
-    <div className="col-span-2 flex items-end">
+    <div className="col-span-2 pt-2 md:pt-0 flex items-end">
       <Image
         src="/second.png"
         alt="second"
@@ -129,7 +129,7 @@ export const SecondGridItem = () => (
     initial={{ opacity: 0, x: 20 }}
     whileInView={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.3, delay: 0.2 }}
-    className="col-span-1 ps-5 bg-cardColor  rounded-lg pt-4"
+    className="md:col-span-1 ps-5 bg-cardColor col-span-1 rounded-lg pt-4"
   >
     <h4 className="text-lg font-bold tracking-tight">Flow graph</h4>
     <p className="mb-6 font-light text-zinc-400 text-sm">

@@ -14,8 +14,8 @@ const Hero = () => {
     stiffness: 80,
   };
   return (
-    <motion.div id="herosection" className="relative md:h-[150vh]  px-1 md:px-0 flex flex-col w-full  text-white">
-      <div className="md:h-[60vh] h-[40vh] flex mt-40 justify-center mx-auto">
+    <motion.div id="herosection" className="relative md:h-[150vh] px-1 md:px-0 flex flex-col w-full text-white">
+      <div className="md:h-[60vh] h-[25vh] flex mt-40 justify-center mx-auto">
         <motion.h1
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}

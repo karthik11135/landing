@@ -8,8 +8,8 @@ const Footer = () => {
   };
 
   return (
-    <div className="grid-cols-2 grid text-zinc-500  tracking-wide mx-auto w-5/6 my-20">
-      <div>
+    <div className="md:grid-cols-2 grid text-zinc-500  tracking-wide mx-auto w-5/6 my-20">
+      <div className="md:mb-0 mb-3">
         <p
           onClick={() => scrollToSection("herosection")}
           className="text-neutral-300  cursor-pointer mb-1.5 text-lg font-bold tracking-wide"
@@ -18,7 +18,7 @@ const Footer = () => {
         </p>
         <p className="text-sm">Copyrights reserved 2024, 2025.</p>
       </div>
-      <div className="grid gap-4 grid-cols-4">
+      <div className="grid md:gap-4 gap-7 grid-cols-2 md:grid-cols-4">
         <div className="flex flex-col gap-3">
           <p className="font-bold text-neutral-300 ">Pages</p>
           <p className="cursor-pointer">Home</p>

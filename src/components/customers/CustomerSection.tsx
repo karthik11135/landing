@@ -50,10 +50,11 @@ const people = [
 
 const CustomerSection = () => {
   return (
-    <div className="w-5/6 pt-16 mb-16 grid  grid-cols-6 mx-auto">
-      <div className="col-span-2 ">
+    <div className="w-5/6 md:pt-16 mb-16 grid  md:grid-cols-6 mx-auto">
+      <div className="md:col-span-2">
         <h2 className="text-slate-100 font-bold mb-4 text-4xl">
-          Deploy your websites <br></br> without any hurdles.
+          Deploy your websites <br className="hidden md:static"></br> without
+          any hurdles.
         </h2>
         <p className="mb-5 text-zinc-500 tracking-tight ">
           Experience lightning-fast hosting with unparalleled reliability. Our
@@ -76,7 +77,7 @@ const CustomerSection = () => {
           Trusted by millions of users
         </p>
       </div>
-      <div className="col-span-1 col-start-6 flex items-center ">
+      <div className="md:col-span-1 md:col-start-6 flex items-center ">
         <HoverBorderGradient as="button" className="py-1 bg-black ">
           Book a call
         </HoverBorderGradient>
