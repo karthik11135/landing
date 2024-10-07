@@ -44,7 +44,7 @@ export const NavWrapper = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <motion.div
-      className={` text-white  fixed grid z-20 grid-cols-3 left-1/2 transform -translate-x-1/2 py-2.5 px-6 rounded-full mx-auto
+      className={`text-white text-lg md:text-md px-2.5 py-2 fixed grid z-20 grid-cols-6 left-1/2 transform -translate-x-1/2 md:py-2.5 md:px-6 rounded-full mx-auto
       ${
         context?.changeNav
           ? "shadow shadow-slate-400 ring-slate-500 backdrop-blur-md bg-slate-700"
@@ -90,7 +90,7 @@ export const NavButtons = () => {
       )}
       <motion.button
         whileHover={{ y: -3.5 }}
-        className="text-black bg-white rounded-md px-2 py-1.5 font-bold"
+        className="text-black bg-white rounded-md md:px-2 px-1 py-1.5 font-bold"
       >
         Book a Call
       </motion.button>
