@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { HamburgerIcon } from "../ui/Icons";
 
 const MenuNavigations = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const menuHandler = () => {
     console.log("reached here");
     setIsOpen((open) => !open);

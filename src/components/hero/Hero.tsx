@@ -14,7 +14,7 @@ const Hero = () => {
     stiffness: 80,
   };
   return (
-    <motion.div id="herosection" className="relative h-[150vh] flex flex-col w-full  text-white">
+    <motion.div id="herosection" className="relative md:h-[150vh] flex flex-col w-full  text-white">
       <div className="h-[60vh] flex mt-40 justify-center mx-auto">
         <motion.h1
           initial={{ opacity: 0, y: 100 }}
