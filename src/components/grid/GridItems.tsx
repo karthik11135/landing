@@ -2,11 +2,9 @@
 
 import React from "react";
 import Image from "next/image";
-
-import { AnimatedTooltip } from "../ui/animated-tooltip";
-
 import { motion } from "framer-motion";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
+import { AnimatedTooltipModified } from "../ui/animated-toolip-modified";
 
 const socialProfiles = [
   {
@@ -111,7 +109,7 @@ export const FirstGridItem = () => (
         variables
       </p>
       <div className="mt-10 flex">
-        <AnimatedTooltip items={socialProfiles} />
+        <AnimatedTooltipModified items={socialProfiles} />
       </div>
     </div>
     <div className="col-span-2 flex items-end">

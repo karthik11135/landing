@@ -5,7 +5,7 @@ import { BackgroundBeams } from "../ui/background-beams";
 
 const Waitlist = () => {
   return (
-    <div className="h-[40rem] relative flex   mb-20 shadow-[0px_-50px_600px_20px_rgba(100,100,100,0.3)] rounded-t-3xl items-center justify-center text-slate-50 py-40">
+    <div className="h-[40rem] relative flex border-t-2 border-zinc-800 rounded-t-3xl items-center justify-center text-slate-50 py-40">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -22,7 +22,7 @@ const Waitlist = () => {
         </h1>
         <p className="from-neutral-200 mb-7 to-neutral-600 bg-clip-text text-transparent bg-gradient-to-br text-center">
           Welcome Welcome Welcome. Join us before anybody else to get the
-          world's best AI services all for free
+          world&apos;s best AI services all for free
         </p>
         <div className="mx-4 ">
           <input

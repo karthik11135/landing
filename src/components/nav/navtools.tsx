@@ -44,10 +44,10 @@ export const NavWrapper = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <motion.div
-      className={` text-white fixed grid z-10 grid-cols-3 left-1/2 transform -translate-x-1/2 py-2.5 px-6 rounded-full mx-auto
+      className={` text-white  fixed grid z-20 grid-cols-3 left-1/2 transform -translate-x-1/2 py-2.5 px-6 rounded-full mx-auto
       ${
         context?.changeNav
-          ? "shadow shadow-slate-400  ring-slate-500 backdrop-blur-lg"
+          ? "shadow shadow-slate-400 ring-slate-500 backdrop-blur-md bg-slate-700"
           : ""
       }`}
       initial={{
@@ -55,7 +55,7 @@ export const NavWrapper = ({ children }: { children: React.ReactNode }) => {
         marginTop: "0rem",
       }}
       animate={{
-        backgroundColor: context?.changeNav ? "rgba(1,1,1,0.2)" : "",
+        backgroundColor: context?.changeNav ? "rgba(1,1,1,0.3)" : "",
         width: context?.changeNav ? "58.33%" : "83.33%",
         marginTop: context?.changeNav ? "1.7rem" : "0.5rem",
       }}

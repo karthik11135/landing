@@ -6,7 +6,7 @@ const Navbar = () => {
     // <div className="text-slate-100 fixed">
       <NavContextProvider>
         <NavWrapper>
-          <div className="items-center  text-start font-bold flex">Startup</div>
+          <div className="items-center text-start font-bold flex">Startup</div>
           <div className="  text-slate-300  text-center ">
             <div className="flex w-fit mx-auto">
               <p className="mx-2 px-2 transition hover:-translate-y-0.5 cursor-pointer rounded-full py-1.5 font-medium ">
