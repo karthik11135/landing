@@ -1,11 +1,11 @@
-"use client";
-import React, { useContext } from "react";
-import { motion } from "framer-motion";
-import { useState } from "react";
-import { useScroll } from "framer-motion";
-import { useMotionValueEvent } from "framer-motion";
-import { AnimatePresence } from "framer-motion";
-import { createContext } from "react";
+'use client';
+import React, { useContext } from 'react';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { useScroll } from 'framer-motion';
+import { useMotionValueEvent } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
+import { createContext } from 'react';
 
 interface NavToggleContextType {
   changeNav: boolean;
@@ -33,9 +33,9 @@ export const NavWrapper = ({ children }: { children: React.ReactNode }) => {
   const { scrollYProgress } = useScroll();
   const context = useContext(NavToggleContext);
 
-  useMotionValueEvent(scrollYProgress, "change", (arg) => {
+  useMotionValueEvent(scrollYProgress, 'change', (arg) => {
     console.log(arg);
-    if (arg > 0.1) {
+    if (arg > 0.02) {
       context?.setChangeNav(true);
     } else {
       context?.setChangeNav(false);
@@ -47,21 +47,21 @@ export const NavWrapper = ({ children }: { children: React.ReactNode }) => {
       className={`text-white text-lg md:text-md px-2.5 py-2 fixed grid z-20 grid-cols-6 left-1/2 transform -translate-x-1/2 md:py-2.5 md:px-6 rounded-full mx-auto
       ${
         context?.changeNav
-          ? "shadow shadow-slate-400 ring-slate-500 backdrop-blur-md bg-slate-700"
-          : ""
+          ? 'shadow shadow-slate-400 ring-slate-500  backdrop-blur-lg bg-slate-900'
+          : ''
       }`}
       initial={{
-        width: "83.33%",
-        marginTop: "0rem",
+        width: '83.33%',
+        marginTop: '0rem',
       }}
       animate={{
-        backgroundColor: context?.changeNav ? "rgba(1,1,1,0.3)" : "",
-        width: context?.changeNav ? "58.33%" : "83.33%",
-        marginTop: context?.changeNav ? "1.7rem" : "0.5rem",
+        backgroundColor: context?.changeNav ? 'rgba(1,1,1,0.3)' : '',
+        width: context?.changeNav ? '58.33%' : '83.33%',
+        marginTop: context?.changeNav ? '1.7rem' : '0.5rem',
       }}
       transition={{
         duration: 0.4,
-        type: "spring",
+        type: 'spring',
         stiffness: 90,
       }}
     >

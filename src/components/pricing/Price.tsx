@@ -4,7 +4,7 @@ import { AddIcon } from "../ui/Icons";
 
 const Price = () => {
   return (
-    <div className="mb-20 w-5/6 mx-auto">
+    <div className="mb-20 mt-8 w-5/6 mx-auto">
       <div className="md:w-3/6 mb-10 mx-auto text-center">
         <h1 className="md:text-4xl text-3xl text-transparent font-bold bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 mb-4">
           Intuitive Pricing available

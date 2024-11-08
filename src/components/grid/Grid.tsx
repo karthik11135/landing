@@ -12,7 +12,7 @@ import {
 
 const Grid = () => {
   return (
-    <div className="text-slate-100 mx-auto w-5/6">
+    <div className="text-slate-100 mx-auto mb-20 w-5/6">
       <div className="md:mt-32 md:mb-20 mb-8">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
